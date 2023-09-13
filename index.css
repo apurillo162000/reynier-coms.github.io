@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'barisa'; 
+    src: url('fonts/barisa.otf');
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4D9BC0 url("img/bg-img.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.whole-windows {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    height: 55vw;
+    top: 7vw;
+    width: 100vw;
+    z-index: 1;
+}
+.mywindow-shadow{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    height: 54vw;
+    overflow: hidden;
+    width: 90.6vw;
+    top: -47.5vw;
+    border-radius: 4vw;
+    box-shadow: 0 0 30px 1px rgba(61, 61, 61, 0.5);
+}
+.home-content {
+    display: grid; /*ETO YUNG HOME CONTENT*/
+    grid-template-columns: 38vw minmax(30vw, 1fr);
+    grid-template-rows: 47vw;
+    position: relative;
+    height: 47.3vw;
+}
+.myNav {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    height: 6.7vw;
+}
+.myNav ul{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    width: 40vw;
+    top: 2vw;
+}
+.myNav ul button{
+    display: block;
+    position: relative;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.2vw;
+    color: rgb(167, 167, 167);
+    background-color: transparent;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    font-weight: bold;
+}
+.myNav ul button:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.4vw;
+    transition: 0.3s;
+}
+.myPic {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 7vw;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 20vw;
+}
+.column2 {
+    display: block;
+    position: relative;
+    padding: 7vw;
+}
+.column2 h1 {
+    margin: 0 0 3vw;
+    font-size: 2.4vw;
+}
+.column2 .mukta {
+    font-family:'barisa';
+    font-size: 4vw;
+}
+.myName {
+    font-size: 4vw;
+    font-family: 'barisa';
+    color: #4D9BC0;
+}
+.typestick {
+    font-size: 5vw;
+    color: #4D9BC0;
+    animation: blinking 1s infinite;
+}
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+.column2 p {
+    font-family: 'barisa';
+    font-size: 2vw;
+}
+.column2 button {
+    display: block;
+    margin: 2vw 0 0;
+    height: 5vw;
+    width: 25vw;
+    font-size: 2vw;
+    color: white;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 5px 1px rgb(128, 128, 128, 0.5);
+    background: #3498db;
+    color: #fff;
+    border: 0.25rem solid #3498db;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.column2 button:hover {
+    color: #3498db;
+    cursor: pointer;
+  }
+  .column2 button::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  .column2 button::after {
+    transition: all 0.35s;
+  }
+  .column2 button:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+  .column2 button::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
+  .about-content {
+    display: none; /*ETO YUNG ABOUT CONTENT*/
+    grid-template-columns: 38vw minmax(30vw, 1fr);
+    grid-template-rows: 47vw;
+    position: relative;
+    width: 90vw;
+    height: 47.3vw;
+    overflow: hidden;
+    z-index: 1;
+}
+  .family-content {
+    display: none; /*ETO YUNG FAMILY CONTENT*/
+    position: relative;
+    height: 47.3vw;
+}
+  .info-mgmt-content {
+    display: none; /*ETO YUNG INFO-MGMT CONTENT*/
+    position: relative;
+    height: 47.3vw;
+    text-align: center;
+}
+  .info-mgmt-content h1 {
+    margin: 6vw;
+    font-family: 'barisa';
+    font-size: 5vw;
+}
+.info-mgmt-content p {
+    margin: 6vw;
+    font-family: 'barisa';
+    font-size: 4vw;
+}
+.info-mgmt-content i {
+    font-size: 4vw;
+}
+
+.abt-column1 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+.abt-column1 h1{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin: 2vw;
+    font-family: 'barisa';
+    font-size: 4vw;
+}
+.abt-column1 h1 i{
+    position: relative;
+    top: 0.5vw;
+    margin: 0 auto;
+    font-size: 4vw;
+}
+.gmap {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 3vw;
+    height: 30vw;
+    width: 51vw;
+    border: 1px solid black;
+}
+.myloc, .mybd, .myage, .myjob, .mydream {
+    display: block;
+    position: relative;
+    margin: 0 auto 2vw;
+    font-size: 2vw;
+    font-family: 'barisa';
+    color: white;
+    background-color: rgb(43, 41, 35);
+    border: 2px solid rgb(43, 41, 35);
+    width: 30vw;
+    height: 5vw;
+    border-radius: 0.5vw;
+    text-align: center;
+    box-shadow: 0 0 10px 1px  rgb(43, 41, 35, 0.5);
+}
+.myloc i, .mybd i, .myage i, .myjob i, .mydream i {
+    position: relative;
+    top: 0.2vw;
+}
+.myloc:hover, .mybd:hover, .myage:hover, .myjob:hover, .mydream:hover {
+    background-color: transparent;
+    color: rgb(43, 41, 35);
+    border: 2px solid rgb(43, 41, 35);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.school-container {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 80vw;
+    flex-direction: row;
+    column-gap: 1vw;
+    top: 6vw;
+}
+.primary-school, .secondary-school, .tertiary-school{
+    display: block;
+    position: relative;
+    height: 30vw;
+    width: 40vw;
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    font-family: 'barisa';
+    border-radius: 0.5vw;
+    box-shadow: 0 1px 10px 1px rgb(51, 51, 51);
+}
+.primary-school h2, .secondary-school h2, .tertiary-school h2{
+    font-family: 'barisa';
+}
+.family-content {
+    text-align: center;
+}
+.family-content h1{
+    margin: 1vw 0 0;
+    font-family: 'barisa';
+    font-size: 3vw;
+}
+.family-content h1 i{
+    position: relative;
+    font-size: 3vw;
+    top: 0.4vw;
+
+}
+.primary-school {
+    transform: translateY(-5%);
+}
+.tertiary-school {
+    transform: translateY(-5%);
+}
+.prim-school, .sec-school, .ter-school {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 20vw;
+    height: 20vw;
+    margin-top: 1vw;
+}
+.primary-school h2, .secondary-school h2, .tertiary-school h2 {
+    display: block;
+    position: relative;
+    margin: 1vw auto 1vw;
+}
