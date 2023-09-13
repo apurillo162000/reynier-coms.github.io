@@ -1,5 +1,5 @@
 var i = 0;
-        var txt = 'Emon Adriano'
+        var txt = 'Reynier Apurillo'
         var speed = 220
         var isReversing = false;
         var delayBeforeReverse = 5000
